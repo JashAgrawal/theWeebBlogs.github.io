@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+to run you also have to initialize data base
+for it you can run 
+### `json-server -watch src\DATA\db.json`
+### `json-server -watch src\DATA\userdata.json`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

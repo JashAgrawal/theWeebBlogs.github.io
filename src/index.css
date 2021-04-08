@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+* {
+  font-family: "Quicksand";
+  margin: 0;
+  color: rgb(255, 252, 251);
+}
+a {
+  text-decoration: none;
+}
+html {
+  background: url(./images/bg.jpg) no-repeat center fixed;
+  background-size: cover;
+  overflow: auto;
+  background-color: black;
+  /* background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(3, 0, 1),
+    rgb(241, 12, 62)
+  ); */
+}
+.loading {
+  text-align: center;
+  margin-top: 200px;
+}
+.navbar {
+  padding: 1em;
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0.3em auto;
+  border-bottom: 1px solid rgb(241, 12, 62);
+  border-image: linear-gradient(to right, black 17%, rgb(241, 12, 62));
+  border-image-slice: 1;
+  position: sticky;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar h1 {
+  color: rgb(241, 12, 62);
+  cursor: pointer;
+}
+.navbar h1:hover {
+  color: rgb(255, 255, 255);
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+.navbar button {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 22em;
+  margin-right: 1em;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 7em;
+  box-shadow: 0 0 0 3px rgb(241, 12, 62);
+}
+.bloglist button {
+  color: rgb(241, 12, 62);
+  background-color: black;
+  border: none;
+}
+.navbar a:hover {
+  color: rgb(241, 12, 62);
+}
+.navbar button:hover {
+  color: black;
+  box-shadow: 0 0 0 3px rgb(0, 0, 0);
+  border: 2px solid rgb(241, 12, 62);
+}
+.home {
+  margin-left: 20px;
+  text-align: left;
+}
+.content-preview {
+  margin: 10px;
+  margin-top: 20px;
+  border: 2px solid #f10c3e;
+  padding: 10px;
+  width: 400px;
+  /* border-radius: 20px; */
+  border-image: linear-gradient(to left, rgb(241, 12, 62), black);
+  border-image-slice: 1;
+  background: url(./images/kaka.jpg) no-repeat center fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: all 0.2s ease-in-out;
+}
+/* .bloglist {
+  max-height: 500px;
+  max-width: 800px;
+} */
+.content-preview h1 {
+  margin: 5px;
+  padding: 5px;
+}
+.content-preview p {
+  margin: 5px;
+  padding: 5px;
+}
+.content-preview ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+.content-preview li {
+  margin: 0 10px 0 10px;
+}
+.content-preview img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.content-preview:hover {
+  box-shadow: 10px 10px 5px #b40724;
+  transform: scale(1.05);
+}
+.blogdetails {
+  text-align: left;
+  margin: auto 100px;
+}
+.blogdetails h1 {
+  color: white;
+}
+.blogbody {
+  margin: auto 500px auto 50px;
+  padding: 20px;
+  border: 1px solid #f10c3e;
+  border-radius: 20px;
+}
+.detailsbody > h3 > p {
+  color: #f10c3e;
+  margin-left: 110px;
+  border: 1px solid #f10c3e;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.create {
+  max-width: 500px;
+  margin-left: 100px;
+  text-align: left;
+  /* border: 1px solid #f10c3e;
+  border-radius: 20px;
+  padding: 20px; */
+}
+.create label {
+  text-align: left;
+  /* display: block; */
+  color: #f10c3e;
+}
+.create h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 80%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  color: black;
+  border: 2px solid #f10c3e;
+  border-radius: 20px;
+  box-sizing: border-box;
+  /* background-color: black;
+  color: white; */
+  /* display: block; */
+}
+.create textarea {
+  height: 200px;
+  display: block;
+  margin: 20px 0px;
+}
+.create input {
+  width: 280px;
+  margin-left: 30px;
+}
+.create select {
+  background-color: black;
+  color: white;
+  /* text-emphasis-color: white; */
+  width: 200px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+.create button {
+  background: #f10c3e;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
